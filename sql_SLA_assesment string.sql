@@ -1,0 +1,1 @@
+select rpad(lpad(upper(substring('Sanjay Kumar',8,5)),7,'%%'),9,'%%') as result;
