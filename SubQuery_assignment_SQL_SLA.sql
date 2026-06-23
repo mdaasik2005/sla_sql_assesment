@@ -12,12 +12,12 @@ CREATE TABLE Students
 
 
 INSERT INTO Students VALUES
-(101, 'Aasik', 'SQL', 75, 'BCA'),
+(101, 'Aasik', 'SQL', 45, 'BCA'),
 (102, 'Shahul', 'Machine Learning', 78, 'BCA'),
 (103, 'Khaja', 'statistics', 96, 'BCA'),
 (104, 'Zainul', 'python', 85, 'BSC'),
 (105, 'Aziz', 'Data Science', 80, 'BCom'),
-(106,'yusuf','SQL',79,'BCA');
+(106,'yusuf','SQL',48,'BCA');
 
 select * from students;
 
@@ -29,11 +29,11 @@ WHERE mark >
     SELECT AVG(mark) FROM Students
 );
 
-##---Multi Row Subquery: Students with Marks > 80
+##---Multi Row Subquery: Students with Marks > 50
 
 SELECT * FROM Students
 WHERE id IN
 (
     SELECT id FROM Students 
-    WHERE mark > 80
+    WHERE mark > 50
 );
